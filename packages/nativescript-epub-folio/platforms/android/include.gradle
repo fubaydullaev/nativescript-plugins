@@ -1,0 +1,25 @@
+/* Include.gradle configuration: http://docs.nativescript.org/plugins/plugins#includegradle-specification */
+
+android {
+	
+}
+repositories {
+        // maven { url "https://jitpack.io" }
+        // maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+        
+        maven { url "https://dl.bintray.com/mobisystech/maven" }
+        maven { url "https://jitpack.io" }
+    }
+
+dependencies {
+    // Describe plugin native Android dependencies like
+	// compile "groupName:pluginName:ver" 
+    // EXAMPLE: compile "com.facebook.fresco:fresco:0.9.0+"
+    implementation "com.folioreader:folioreader:0.5.4"//this is just the updated version as of now
+    implementation 'com.android.support:multidex:1.0.3' // ( for androidx)
+    configurations.matching { it.name == '_internal_aapt2_binary' }.all {
+        config -> config.resolutionStrategy.eachDependency {
+            details -> details.useVersion("3.3.2-5309881")
+        } 
+    }
+}

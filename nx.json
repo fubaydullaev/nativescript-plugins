@@ -1,0 +1,49 @@
+{
+  "npmScope": "fubaydullaev",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "docs": {
+      "tags": []
+    },
+    "demo": {
+      "tags": []
+    },
+    "demo-angular": {
+      "tags": []
+    },
+    "demo-react": {
+      "tags": []
+    },
+    "demo-vue": {
+      "tags": []
+    },
+    "all": {
+      "tags": []
+    },
+    "server-demo": {
+      "tags": []
+    },
+    "demo-server": {
+      "tags": []
+    },
+    "nativescript-epub-folio": {
+      "tags": []
+    }
+  },
+  "workspaceLayout": {
+    "appsDir": "apps",
+    "libsDir": "packages"
+  }
+}

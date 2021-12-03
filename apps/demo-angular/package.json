@@ -1,0 +1,11 @@
+{
+  "main": "./src/main.ts",
+  "dependencies": {
+    "@nativescript/core": "file:../../node_modules/@nativescript/core",
+    "@fubaydullaev/nativescript-epub-folio": "file:../../dist/packages/nativescript-epub-folio"
+  },
+  "devDependencies": {
+    "@nativescript/android": "~8.1.1",
+    "@nativescript/ios": "~8.1.0"
+  }
+}
